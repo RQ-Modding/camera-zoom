@@ -11,7 +11,7 @@ rq.log(string.format(
   "camera-zoom: lock=%.1f cleared=%.1f-%.1f fog_far=%.1f steps=%d",
   LOCK, DMIN, DMAX, FOG_FAR, SLIDER_STEPS))
 
-local ok = rq.dungeon_camera({
+local ok = rq.dungeon.camera({
   lock = LOCK,
   min = DMIN,
   max = DMAX,
@@ -20,5 +20,5 @@ local ok = rq.dungeon_camera({
 })
 
 if not ok then
-  error("camera-zoom: dungeon_camera patch failed (see mods/rqmod.log)")
+  error("camera-zoom: dungeon.camera patch failed (see mods/rqmod.log)")
 end
