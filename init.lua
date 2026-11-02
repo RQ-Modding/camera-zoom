@@ -20,5 +20,5 @@ local ok = rq.dungeon.camera({
 })
 
 if not ok then
-  error("camera-zoom: dungeon.camera patch failed (see mods/rqmod.log)")
+  error("camera-zoom: dungeon.camera patch failed (see logs/rqmod.log)")
 end
