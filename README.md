@@ -1,15 +1,32 @@
-# camera-zoom
+# Camera Zoom
 
-Cleared-dungeon camera zoom for Rance Quest Magnum on the RQ_modding_xsystem4 fork.
+A wider camera zoom range in dungeons you have already cleared.
 
-- First-visit lock stays **35.0** (wheel/slider off)
-- Cleared zoom range **17.5–120.0**, fog far **160.0**, slider steps **25**
+## What it changes
 
-## Needs
+- In a cleared dungeon, the mouse wheel and the zoom slider go from **17.5** (close) to **120**
+  (far), in **25** steps, and the fog starts farther away (**160**) so the far view is not hidden.
+- On a first visit the camera stays locked at **35**, as in the game. (The Binoculars mod unlocks it
+  there.)
 
-1. Moru's fork (`RQ_modding_xsystem4`, `-Dmodloader=true`) — not stock xsystem4 1.0.0
-2. `rqmod` apply into a work copy (`rqmod\apply.ps1`)
+## Keys and settings
 
-Local-only git. No remote. Do not push until Moru asks.
+None in the game. The numbers are at the top of `init.lua`: `LOCK`, `DMIN`, `DMAX`, `FOG_FAR` and
+`SLIDER_STEPS`.
 
-Apply discovers this folder as sibling `mods\camera-zoom\` next to `rqmod\`.
+## Saves
+
+Nothing.
+
+## Works with
+
+Binoculars uses this mod's range on a first visit when both are installed.
+
+## Install
+
+Needs [RQ MOD](https://github.com/RQ-Modding/RQ-Mod) with loader **1.0.0** or newer. Extract the
+release zip into the game's `mods` folder, so that you have `mods/camera-zoom/mod.json`.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
