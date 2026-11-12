@@ -19,13 +19,29 @@ A wider camera zoom range in dungeons you have already cleared, wider still outd
 
 ## Keys and settings
 
-None in the game. The numbers are at the top of `init.lua`: `LOCK`, `DMIN`, `DMAX`, `FOG_FAR`,
-`SLIDER_STEPS`, and for outdoors `OUT_MAX`, `OUT_FAR` (where the view is cut) and the list of area
-kinds. With the cut at the game's 200, a far end past 120 shows black at the top of the view.
+**Config → Mods → Camera Zoom** has the numbers, each with what it changes, the game's own number
+and the range we recommend (drawn lighter on the slider):
+
+| Setting | Default | Recommended | The game's own |
+| --- | --- | --- | --- |
+| Nearest zoom | 17.5 | 15 to 35 | 35 |
+| Farthest indoors (caves, buildings) | 120 | 60 to 120 | 60 |
+| Farthest outdoors | 150 | 60 to 150 | 60 |
+| First-visit distance | 35 | 30 to 45 | 35 |
+| Zoom steps | 25 | 15 to 40 | 25 |
+
+- Setting a number outside its recommended range asks first and says what goes wrong there: nearer
+  than 15 the camera goes into walls; past 120 in caves more black shows past the walls; past 150
+  outdoors the edge of the sky shows as black corners, and past 180 the far ground is cut. **Yes**
+  keeps your number; **No** puts the end of the range.
+- A change holds from the next map the game builds: walk into the next area, or take a quest.
+- **Reset** puts back the defaults.
+- Where the game cuts the 3D view follows the farthest zoom by itself (the game's 200 up to 120, at
+  least 400 past it), and the fog stays at 160.
 
 ## Saves
 
-Nothing.
+Nothing in the game's save. The settings are kept for every save (`rq.store.global`).
 
 ## Works with
 
@@ -33,7 +49,7 @@ Binoculars uses this mod's range on a first visit when both are installed.
 
 ## Install
 
-Needs [RQ MOD](https://github.com/RQ-Modding/RQ-Mod) with loader **2.30.0** or newer. Extract the
+Needs [RQ MOD](https://github.com/RQ-Modding/RQ-Mod) with loader **2.44.0** or newer. Extract the
 release zip into the game's `mods` folder, so that you have `mods/camera-zoom/mod.json`.
 
 ## License
