@@ -2,6 +2,14 @@
 
 A wider camera zoom range in dungeons you have already cleared, wider still outdoors.
 
+## Showcase
+
+<img width="1264" height="756" alt="20261118-1501-34 2840135" src="https://github.com/user-attachments/assets/21e54b53-e004-40b6-bccf-3738548fd16f" />
+
+## Mod Options
+
+<img width="1267" height="915" alt="image" src="https://github.com/user-attachments/assets/a7366dfa-52cd-42af-97f7-e9c313c3a1e2" />
+
 ## What it changes
 
 - In a cleared dungeon, the mouse wheel and the zoom slider go from **17.5** (close) to **120**
