@@ -26,8 +26,8 @@ local OUTDOORS = {
   [K.CAMP] = true,
 }
 
--- The settings. The defaults are 1.1's numbers; the recommended ranges come from the survey shots of
--- notes/plans/plan-morurun-camera.md (4.2 and 8.2) and plan-mod-review.md (3.2).
+-- The settings. The defaults are 1.1's numbers; the recommended ranges come from survey shots
+-- taken in the game, outdoors and in caves.
 local settings = rq.config.settings{
   id = "camera-zoom",
   title = "Camera Zoom",

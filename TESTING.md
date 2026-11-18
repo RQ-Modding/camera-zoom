@@ -16,6 +16,6 @@ A value outside a row's recommended range opens the game's Yes / No (`select` sc
 - **Outdoors** is the area's kind (`ctx.kind` in `rq.dungeon.on_map`): `FOREST`, `SNOW`, `FIELD`, `MOUNTAIN`, `BURNING_FOREST`, `ROAD`, `WATERSIDE`, `CAMP`.
 - **The view's cut** on the map shown now: `rq.ain.global("g_sMapMode", "m_Projection", "fFar")` (400 outdoors, 200 elsewhere).
 - `rq.mod.get("camera-zoom")` returns `numbers` (`min`, `max`, `out_max`, `fog_far`, `far`, `out_far`, `steps`, `lock`; the same table, kept up to date), `outdoors(kind)`, `set(key, value)` (as the page, with no question: keys `min`, `max`, `out_max`, `lock`, `steps`) and `reset()`.
-- Test Lab: `test-lab/scenarios/camera.lua` (an outdoor area, then a cave; the view's cut; the wheel's step; the first visit's lock; a changed setting on the next map). `config-pages.lua`: the page, and the question past a recommended range.
+- Test Lab: the scenario `camera` (an outdoor area, then a cave; the view's cut; the wheel's step; the first visit's lock; a changed setting on the next map). `config-pages`: the page, and the question past a recommended range.
 
 The slider on the dungeon HUD is the vanilla camera scrollbar, not this mod. Do not press it as part of a camera-zoom test unless the walk asked for the vanilla slider.
